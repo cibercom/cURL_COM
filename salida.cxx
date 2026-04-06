@@ -1,0 +1,1 @@
+curl -X DELETE -v http://localhost:3000/people/3
