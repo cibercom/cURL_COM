@@ -11,8 +11,8 @@
    $ch2 = curl_init();
    
    // Set options for each handle
-   curl_setopt($ch1, CURLOPT_URL, "http://example.com");
-   curl_setopt($ch2, CURLOPT_URL, "http://example.org");
+   curl_setopt($ch1, CURLOPT_URL, "https://m.youtube.com");
+   curl_setopt($ch2, CURLOPT_URL, "https://www.youtube.com");
    
    // Create a cURL multi handle
    $mh = curl_multi_init();
