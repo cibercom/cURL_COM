@@ -1,6 +1,6 @@
 
 <?php
-$request = curl_init('http://www.example.com/upload.php');
+$request = curl_init('https://m.youtube.com');
 curl_setopt($request, CURLOPT_POST, true);
 curl_setopt($request, CURLOPT_SAFE_UPLOAD, true);
 curl_setopt($request, CURLOPT_POSTFIELDS, [
