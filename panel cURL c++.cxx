@@ -11,7 +11,7 @@ int main() {
 
     if(curl) {
         // Set the target URL
-        curl_easy_setopt(curl, CURLOPT_URL, "https://prm.org.do/");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://m.youtube.com/");
 
         // Set the request method to DELETE
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
