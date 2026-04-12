@@ -63,7 +63,7 @@ error:
     ret
 
 section .data
-    url db 'http://www.example.com/',0  
+    url db 'http://www.youtube.com/',0  
 
 section .bss
     curly resq 1
