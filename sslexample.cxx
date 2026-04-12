@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#define URL "https://example.com"
+#define URL "https://m.youtube.com"
 
 size_t nop(void *ptr, size_t size, size_t nmemb, void *unused)
 {
