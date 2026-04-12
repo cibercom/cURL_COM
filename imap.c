@@ -48,7 +48,7 @@ int main(void)
     curl_easy_setopt(curl, CURLOPT_PASSWORD, "secret");
  
     /* This is just the server URL */
-    curl_easy_setopt(curl, CURLOPT_URL, "imap://imap.example.com");
+    curl_easy_setopt(curl, CURLOPT_URL, "imap://imap.youtube.com");
  
     /* Set the DELETE command specifying the existing folder */
     curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE FOLDER");
