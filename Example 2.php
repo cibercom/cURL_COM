@@ -9,9 +9,9 @@
 
     <?php
    // Create multiple cURL handles
-   $ch1 = curl_init("http://tutorialspoint.com");
-   $ch2 = curl_init("http://tutorix.com");
-   $ch3 = curl_init("http://example.net");
+   $ch1 = curl_init("https://www.youtube.com");
+   $ch2 = curl_init("https://m.youtube.com");
+   $ch3 = curl_init("https://youtube.com");
    
    // Create a cURL multi handle
    $mh = curl_multi_init();
