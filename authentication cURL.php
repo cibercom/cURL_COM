@@ -7,27 +7,28 @@
     </head>
     <body>
 
-<?php
+  <?php
 
-$url = "https://www.youtube.com/"; 
+$url = "https://www.youtube.com/";
+
+$username = "your_username";
+$password = "your_password";
 
 $ch = curl_init($url);
 
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE"); 
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);   
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_USERPWD, $username . ":" . $password);
 
 $response = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 curl_close($ch);
 
-if ($http_code == 200) {
-  echo "Resource deleted successfully!";
-} else {
-  echo "Error deleting resource: " . $http_code;
-}
+
 
 ?>
-	
+
     </body>
+
 </html>		
