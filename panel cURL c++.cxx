@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <curl/curl.h>
 
 int main() {
