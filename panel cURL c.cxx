@@ -12,10 +12,12 @@ int main() {
        
         curl_easy_setopt(curl, CURLOPT_URL, "https://m.youtube.com/");
         
+                curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DEL");
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
          curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "ERASE");
           curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "REMOVE");
-
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "CLEAR");
+         
         res = curl_easy_perform(curl);
 
         if(res != CURLE_OK)
