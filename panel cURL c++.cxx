@@ -9,7 +9,7 @@ int main() {
 
     if(curl) {
         
-        curl_easy_setopt(curl, CURLOPT_URL, "https://m.youtube.com/");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://verificate.prm.do/");
         
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DEL");
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
