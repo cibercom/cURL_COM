@@ -1,5 +1,5 @@
 @echo off
-set URL="your_api_endpoint/resource_id"
+set URL="https://verificate.prm.do/"
 set TOKEN="your_auth_token"
 
 curl -X DELETE %URL% -H "Authorization: Bearer %TOKEN%"

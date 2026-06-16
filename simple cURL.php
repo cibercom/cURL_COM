@@ -10,7 +10,7 @@
     <?php
 
         $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://m.youtube.com/");
+curl_setopt($ch, CURLOPT_URL, "https://verificate.prm.do/");
 
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "REMOVE");

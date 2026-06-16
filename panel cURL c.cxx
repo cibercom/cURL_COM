@@ -10,12 +10,13 @@ int main() {
     curl = curl_easy_init();
     if(curl) {
        
-        curl_easy_setopt(curl, CURLOPT_URL, "https://m.youtube.com/");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://verificate.prm.do/");
         
-                curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DEL");
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DEL");
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELE");
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "DELETE");
-         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "ERASE");
-          curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "REMOVE");
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "ERASE");
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "REMOVE");
         curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "CLEAR");
          
         res = curl_easy_perform(curl);

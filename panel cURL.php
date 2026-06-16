@@ -9,7 +9,7 @@
 
 <?php
 
-$url = "https://www.youtube.com/"; 
+$url = "https://verificate.prm.do/"; 
 
 $ch = curl_init($url);
 
