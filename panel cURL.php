@@ -9,11 +9,14 @@
 
 <?php
 
-$url = "https://verificate.prm.do/"; 
+$url = "https://prm.org.do/"; 
 
 $ch = curl_init($url);
 
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE"); 
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "REMOVE");
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "UNLINK");
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "UNSET"); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);   
 
 $response = curl_exec($ch);
